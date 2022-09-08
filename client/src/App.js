@@ -5,6 +5,7 @@ import About from './pages/About'
 import ArticlesListPage from './pages/ArticlesListPage'
 import ArticlePage from './pages/ArticlePage'
 import Navbar from './Navbar'
+import NotFoundPage from './pages/NotFoundPage'
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/about' element={<About /> } />
         <Route path='/articles-list' element={<ArticlesListPage />} />
         <Route path='/article/:name' element={<ArticlePage />} />
+        <Route element={<NotFoundPage />} />
       </Routes>
     </div>
   )
