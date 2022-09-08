@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route } from "react-router-dom"
 import Homepage from './pages/Homepage'
 import About from './pages/About'
-import ArticlesList from './pages/ArticlesList'
+import ArticlesListPage from './pages/ArticlesListPage'
 import ArticlePage from './pages/ArticlePage'
 import Navbar from './Navbar'
 
@@ -15,7 +15,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Homepage />} exact />
         <Route path='/about' element={<About /> } />
-        <Route path='/articles-list' element={<ArticlesList />} />
+        <Route path='/articles-list' element={<ArticlesListPage />} />
         <Route path='/article/:name' element={<ArticlePage />} />
       </Routes>
     </div>
