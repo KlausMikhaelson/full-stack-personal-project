@@ -1,0 +1,12 @@
+
+.navBar-links {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navBar {
+    text-decoration: none;
+
+}

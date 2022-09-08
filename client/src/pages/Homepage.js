@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Homepage = () => {
+const Homepage = () => {
   return (
     <>
     <h1>Hello Welcome to my Blog</h1>
@@ -10,3 +10,4 @@ export const Homepage = () => {
   )
 }
 
+export default Homepage
