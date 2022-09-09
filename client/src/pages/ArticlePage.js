@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import ArticlesList from '../components/ArticlesList'
 import { useParams } from 'react-router-dom'
 import articleContent from "./article-content"
+import CommentsList from '../components/CommentsList'
+import UpvoteSection from '../components/UpvoteSection'
 
 const ArticlePage = () => { 
   const { name } = useParams();
@@ -23,10 +25,11 @@ const ArticlePage = () => {
   return (
     <>
       <h1>{article.title}</h1>
-      <p>This post has been upvotes {articleInfo.upvotes} times</p>
+      <UpvoteSection articleName={name} upvotes={articleInfo.upvotes} setArticleInfo={setArticleInfo} />
       {article.content.map((paragraph, key) => (
         <p key={key}>{paragraph}</p>
       ))}
+      <CommentsList comments={articleInfo.comments} />
       <h3>Other Articles</h3>
       <ArticlesList articles={otherArticles} />
     </>
