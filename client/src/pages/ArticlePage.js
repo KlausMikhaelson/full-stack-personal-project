@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import articleContent from "./article-content"
 import CommentsList from '../components/CommentsList'
 import UpvoteSection from '../components/UpvoteSection'
+import AddCommentform from '../components/AddCommentform'
 
 const ArticlePage = () => { 
   const { name } = useParams();
@@ -30,6 +31,7 @@ const ArticlePage = () => {
         <p key={key}>{paragraph}</p>
       ))}
       <CommentsList comments={articleInfo.comments} />
+      <AddCommentform articleName={name} setArticleInfo={setArticleInfo} />
       <h3>Other Articles</h3>
       <ArticlesList articles={otherArticles} />
     </>
