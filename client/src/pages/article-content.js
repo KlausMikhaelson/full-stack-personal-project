@@ -72,19 +72,6 @@ const articles = [
             consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
         ]
     },  
-    {
-        name: "Daily Blog",
-        title: "Why spending time on bugs are important",
-        content: [
-            `So today I was working on adding google Oauth on my webapp and
-            it was quite frustrating because I wanted to do with my own so I was
-            just reading documentations but it wasn't that clear or maybe that way that
-            I wanted it to be but after spending some time now at 4:39 I am happy to write that I
-            figured that out this feeling is really amazing when you figure something
-            out by your own.
-            So by this words let's call it a day or night whatever !`
-        ]
-    }
 ];
 
 export default articles;
