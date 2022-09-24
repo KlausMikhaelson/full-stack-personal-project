@@ -9,3 +9,5 @@
 - cd to the server folder
 - Enter `npm install`
 - Now you have all the dependencies so run `npm start`
+
+## Made during completing a ReactJs course on LinkedIn
